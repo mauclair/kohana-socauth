@@ -29,6 +29,7 @@ Soon!
 2. Create a file with the name of your driver.
 3. Create a class Driver_`NameOfDriver` that extends Socauth_Driver:
 
+
     class Provider_CustomDriver extends Socauth_Driver{}
 
 ### Change or write a new provider ###
@@ -37,10 +38,11 @@ Soon!
 2. Create a file with the name of your provider.
 3. Create a class Provider_`NameOfProvider` that extends Socauth_Provider:
 
+
     class Provider_CustomProvider extends Socauth_Provider
     {
         public function login($params = array()) {}
-		public function logout() {}	
+        public function logout() {}	
     }
 
 4. Two methods are needed at minimum: `login` and `logout` 
